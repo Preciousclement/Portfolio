@@ -12,7 +12,7 @@ A comprehensive analysis of Superstore's sales performance, identifying key tren
 
 ---
 
-### 2. [Netflix Userbase Analysis](./netflix-userbase.md )
+### 2. [Netflix Userbase Analysis](./netflix-userbase.md)
 A deep dive into Netflix’s user data, highlighting trends in subscription types, user retention, and growth opportunities across various regions.
 
 ---
