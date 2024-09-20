@@ -51,51 +51,36 @@ The dataset consists of 9,995 rows with the folllowing attributes; Row ID, Order
 - Build charts accordingly
 - Formatted the charts by cleaning up axis & headers. coloring and tooltip
 
-**CALCULATED FIELDS CREATED**
-1. **Formular was also used for CY profit, quantity and orders**
--- CY of Sales --
-IF YEAR([Order Date]) = [Select Year] THEN [Sales]
-END
+## Calculated Fields Created
 
--- CY Customer --
-IF YEAR([Order Date]) = [Select Year] THEN [Customer ID] 
-END
+1. **Current Year (CY) of Sales**  
+   `IF YEAR([Order Date]) = [Select Year] THEN [Sales] END`
 
+2. **Current Year (CY) Customers**  
+   `IF YEAR([Order Date]) = [Select Year] THEN [Customer ID] END`  
+   *(This formula was also used for CY profit, quantity, and orders)*
 
-2. **Formular was also used for PY profit, quantity and orders**
--- PY of Sales --
-IF YEAR([Order Date]) = [Select Year] - 1 THEN [Sales]
-END
+3. **Previous Year (PY) of Sales**  
+   `IF YEAR([Order Date]) = [Select Year] - 1 THEN [Sales] END`
 
--- PY Customers --
-IF YEAR([Order Date]) = [Select Year] - 1 THEN [Customer ID] 
-END
+4. **Previous Year (PY) Customers**  
+   `IF YEAR([Order Date]) = [Select Year] - 1 THEN [Customer ID] END`  
+   *(This formula was also used for PY profit, quantity, and orders)*
 
-3. **Formular was also used for % Diff of profit, quantity and orders**
--- % Difference of Sales between years --
-(SUM([CY Sales]) - SUM([PY Sales])) / SUM([PY Sales])
+5. **% Difference of Sales Between Years**  
+   `(SUM([CY Sales]) - SUM([PY Sales])) / SUM([PY Sales])`
 
--- % Difference of Customers between years --
-(COUNTD([CY Customers]) - COUNTD([PY Customers])) / COUNTD([PY Customers])
+6. **% Difference of Customers Between Years**  
+   `(COUNTD([CY Customers]) - COUNTD([PY Customers])) / COUNTD([PY Customers])`  
+   *(This formula was also used for % difference of profit, quantity, and orders)*
 
+7. **Minimum/Maximum of Sales**  
+   `IF SUM([CY Sales]) = WINDOW_MAX(SUM([CY Sales])) THEN SUM([CY Sales]) ELSEIF SUM([CY Sales]) = WINDOW_MIN(SUM([CY Sales])) THEN SUM([CY Sales]) END`
 
-4. **Formular was also used for Min/Max of profit, quantity and orders**
--- Min/Max of Sales --
-IF SUM([CY Sales])= WINDOW_MAX(SUM([CY Sales]))
-THEN SUM([CY Sales])
-ELSEIF SUM([CY Sales])= WINDOW_MIN(SUM([CY Sales]))
-THEN SUM([CY Sales])
-END
+8. **Minimum/Maximum of Customers**  
+   `IF COUNTD([CY Customers]) = WINDOW_MAX(COUNTD([CY Customers])) THEN COUNTD([CY Customers]) ELSEIF COUNTD([CY Customers]) = WINDOW_MIN(COUNTD([CY Customers])) THEN COUNTD([CY Customers]) END`  
+   *(This formula was also used for Min/Max of profit, quantity, and orders)*
 
--- Min/Mx of Customers --
-IF COUNTD([CY Customers]) = WINDOW_MAX(COUNTD([CY Customers]))
-THEN COUNTD([CY Customers])
-ELSEIF COUNTD([CY Customers]) = WINDOW_MIN(COUNTD([CY Customers]))
-THEN COUNTD([CY Customers])
-END
-
-
-```
 #### 3. Dashboard Setup
 - Drew Mockups for containers
 - Built the container stgructures
@@ -106,7 +91,6 @@ END
 **Dashbord**
 
 Published on Tableau Public(Dynamic): [View Tableau Visualization]([https://link-to-your-tableau-visualization](https://public.tableau.com/views/SuperstoreSales2_17260991531630/CustomersDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
 
 
 
