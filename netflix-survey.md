@@ -153,7 +153,6 @@ ORDER BY PaymentDate DESC;
 This analysis provides a comprehensive overview of Netflix’s userbase, highlighting key trends and areas for potential growth.
 The insights can inform marketing strategies, product development, and customer engagement initiatives.
 
-
 ### Recommendations
 1. Enhance Targeted Marketing:
   - Focus on users aged 30-50 who prefer Premium subscriptions, as they represent a significant portion of the revenue.
@@ -166,5 +165,6 @@ The insights can inform marketing strategies, product development, and customer 
 3. Leverage Data Analytics:
   - Develop predictive models to anticipate user behavior, such as likelihood of upgrading or downgrading plans.
   - Conduct regular churn analysis to identify patterns and intervene before users decide to leave the platform.
+
 
 [Back to Portfolio](./index.md)
