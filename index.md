@@ -13,4 +13,4 @@ Below are some of my featured data projects:
 Feel free to [connect on LinkedIn](https://www.linkedin.com/in/preciousclems) or [email me](mailto:preciousclement011@gmail.com).
 
 
-Add index.md for homepage
+
