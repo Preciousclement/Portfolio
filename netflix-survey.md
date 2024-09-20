@@ -126,6 +126,8 @@ FROM precious_projects.dbo.Netflix_Userbase
 GROUP BY CONVERT(DATE, Last_Payment_Date)
 ORDER BY PaymentDate DESC;
 
+```
+
 #### 3. Visualizations
 - Subscription Distribution: Bar charts and pie charts showing the proportion of each subscription type.
 - Revenue Trends: Line graphs depicting monthly revenue patterns over time.
@@ -146,9 +148,11 @@ ORDER BY PaymentDate DESC;
 3. Demographics: The majority of users are between the ages of 30-50, with a relatively even distribution across genders.
 4. Most users access Netflix via tablet and smartphones.
 
+
 ### Conclusion
 This analysis provides a comprehensive overview of Netflix’s userbase, highlighting key trends and areas for potential growth.
 The insights can inform marketing strategies, product development, and customer engagement initiatives.
+
 
 ### Recommendations
 1. Enhance Targeted Marketing:
