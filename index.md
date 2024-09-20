@@ -17,7 +17,7 @@ A deep dive into Netflix’s user data, highlighting trends in subscription type
 
 ---
 
-### 3. [Data Survey Analysis](./Data-survey.md)
+### 3. [Data Survey Analysis](./data-survey.md)
 An exploration of a data survey dataset, breaking down responses by job satisfaction, salary distribution, and career-switch preferences within the data field.
 
 ---
